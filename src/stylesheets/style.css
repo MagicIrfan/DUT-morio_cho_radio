@@ -1,0 +1,96 @@
+
+
+body
+{
+    background: #8AE4FF;
+}
+
+
+.tag
+{
+    margin-left:3px;
+    color:black;
+}
+
+.deselec
+{
+    margin-left:10px;
+}
+
+.tagname
+{
+    background: #8AE4FF;
+    filter: brightness(70%);
+}
+
+.music
+{
+    display:block;
+    margin:auto;
+}
+
+.currentradio
+{
+   background: #8AE4FF;
+   filter: brightness(85%);
+   margin-bottom:50px;
+   text-align:center;
+   margin-top:40px;
+}
+
+.seltag
+{
+    margin-bottom: 10px;
+    color:white;
+}
+
+.currentradio .tagname
+{
+    display: inline-block;
+    margin-right:10px;
+    padding:4px;
+}
+
+.radio
+{
+   /*background: #8AE4FF;*/
+   filter: brightness(85%);
+   cursor:pointer;
+   text-align:center;
+   
+}
+
+.radio div
+{
+    margin:auto;
+}
+
+.radio:hover
+{
+    transform: scale(1.2);
+}
+
+.search
+{
+    max-width:200px;
+    margin-left:auto;
+    margin-right:15px;
+}
+
+.liste
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: row ;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.divtag
+{
+    margin-bottom:20px;
+}
+nav
+{
+    margin-bottom: 20px;
+}
