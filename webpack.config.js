@@ -9,7 +9,8 @@ module.exports = {
     output: 
     {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'main.js'
+      filename: 'main.js',
+      publicPath: 'auto'
     },
     plugins: [new HtmlWebpackPlugin({
     title: 'Morio-cho Radio',
@@ -20,12 +21,11 @@ module.exports = {
     ],
   devServer:
   {
-    contentBase: path.resolve(__dirname, './dist'),
+    static: './dist',
+    //contentBase: path.resolve(__dirname, './dist'),
     hot:true,
     compress:true,
-    port:3000,
-    host:'localhost',
-    publicPath:'http://localhost:3000/',
+    historyApiFallback: true
   },
   module:
   {
@@ -87,7 +87,7 @@ module.exports = {
               }
               
             ],
-        },*/
+        }*/
 
       ]
   },
